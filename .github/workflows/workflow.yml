@@ -3,6 +3,6 @@ on: [workflow_dispatch]
 
 jobs:
   hello_world:
-    runs-on: ubuntu-version
+    runs-on: ubuntu-latest
     steps:
-      - run: python3 ./main.py
+      - run: ping www.google.com
