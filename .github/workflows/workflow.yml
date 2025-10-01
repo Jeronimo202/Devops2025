@@ -10,6 +10,7 @@ jobs:
 
     - name: Clonar el repositorio
       uses: actions/checkout/checkout@v3
+      
     - run: ls -la
     
     - run: python3 main.py
