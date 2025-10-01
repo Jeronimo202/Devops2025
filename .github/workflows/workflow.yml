@@ -13,7 +13,7 @@ jobs:
       
     - name: crear clasve ssh
       env: 
-        ssh_key: $ {{secrets.SSH_KEY}}
+        ssh_key: ${{secrets.SSH_KEY}}
       run: |
         echo "$ssh_key" > key.pem
         chmod 600 key.pem 
