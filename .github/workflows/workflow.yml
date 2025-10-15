@@ -28,3 +28,4 @@ jobs:
           context: .
           push: true
           tags: ghcr.io/jeronimo202/web_app:latest
+          
