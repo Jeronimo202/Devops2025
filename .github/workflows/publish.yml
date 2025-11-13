@@ -34,7 +34,7 @@ jobs:
 
       - name: Upload package to Nexus PyPI
         env:
-          TWINE_USERNAME: ${{ secretS.USER }}
+          TWINE_USERNAME: ${{ secretS.USERNEXUS }}
           TWINE_PASSWORD: ${{ secrets.PASS }}
         run: |
           twine upload --repository-url "${{ secrets.NEXUS }}" dist/*.tar.gz dist/*.whl
